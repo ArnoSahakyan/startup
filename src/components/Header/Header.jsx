@@ -4,9 +4,10 @@ import Slider from "react-slick";
 import { nanoid } from 'nanoid'
 
 export default function Header() {
-  const [navlinks, setNavlinks] = useState([
+  const navlinks = [
     'Home', 'Features', 'Pricing', 'Blog'
-  ])
+  ]
+
   const headerInfo = [
     {
       id: nanoid(6),
@@ -33,7 +34,8 @@ export default function Header() {
       description: 'Startup Framework gives you complete freedom over your creative process — you don’t have to think about any technical aspects. There are no limits and absolutely no coding.',
     },
   ]
-  const [button, setButton] = useState(0)
+
+  const [currentButton, SetCurrentButton] = useState(0)
 
   const settings = {
     dots: true,
@@ -50,7 +52,7 @@ export default function Header() {
             {
               navlinks.map((link, index) => {
                 return (
-                  <li className={button === index ?'active' :''} onClick={() => setButton(index)} key={index}>{link}</li>
+                  <li className={currentButton === index ? 'active' : ''} onClick={() => SetCurrentButton(index)} key={index}>{link}</li>
                 )
               })
             }
@@ -64,15 +66,14 @@ export default function Header() {
                   <span>{info.name}</span>
                   <h1>{info.title}</h1>
                   <p>{info.description}</p>
-                  
+
                 </div>
               )
             })
           }
         </Slider>
-        <button>Create An Account</button>
+        <button className='headerButton'>Create An Account</button>
       </div>
-
     </header>
   )
 }
