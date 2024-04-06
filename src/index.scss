@@ -1,7 +1,9 @@
-ol,ul{
-    list-style: none;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
-.container{
-    max-width: 1400px; 
-    margin: 0 auto;
-  }
+
+ul,
+ol {
+  list-style: none;
+}
