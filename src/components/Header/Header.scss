@@ -1,0 +1,73 @@
+.Header {
+    background-image: url('/Landing\ Page@2x.png');
+    background-size: cover;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        color: white;
+        font-family: "DM Sans", sans-serif;
+        padding: 80px 0;
+
+        nav {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 43px;
+                li{
+                    cursor: pointer;
+                    &.active{
+                        opacity:0.3;
+                    }
+                    font-size: 18px;
+                }
+
+            }
+        }
+
+        .slick-slider {
+            .slick-dots{
+                li{
+                }
+            }
+            width: 83%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 80px;
+            .Information {
+                margin: 0 auto;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                gap: 28px;
+                flex-direction: column;
+                width: 65% !important;
+                h1{
+                    font-size: 72px;
+                }
+                p{
+                    font-size: 22px;
+                }
+                span{
+                    font-size: 24px;
+                }
+            }
+        }
+        button{
+            padding: 17px 35px;
+            background-color:#482BE7;
+            line-height: 26px;
+            align-self: center;
+            color: white;
+            border-radius: 100px;
+            border: none;
+            font-size: 18px;
+        }
+    }
+}
