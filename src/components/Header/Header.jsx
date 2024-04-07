@@ -11,27 +11,27 @@ export default function Header() {
   const headerInfo = [
     {
       id: nanoid(6),
+      name: 'Startup 1',
       title: 'Forget About Code',
-      name: 'StartUp 1',
       description: 'Startup Framework gives you complete freedom over your creative process — you don’t have to think about any technical aspects. There are no limits and absolutely no coding.',
     },
     {
       id: nanoid(6),
-      title: 'Forget About Code',
-      name: 'StartUp 2',
-      description: 'Startup Framework gives you complete freedom over your creative process — you don’t have to think about any technical aspects. There are no limits and absolutely no coding.',
+      name: 'Startup 2',
+      title: 'Empower Your Ideas',
+      description: 'Unleash the potential of your ideas with our intuitive framework. No need to worry about technical complexities. Focus on what matters most—bringing your vision to life.',
     },
     {
       id: nanoid(6),
-      title: 'Forget About Code',
-      name: 'StartUp 3',
-      description: 'Startup Framework gives you complete freedom over your creative process — you don’t have to think about any technical aspects. There are no limits and absolutely no coding.',
+      name: 'Startup 3',
+      title: 'Simplify Your Workflow',
+      description: 'Streamline your workflow and amplify your productivity. Our framework removes the barriers of coding, allowing you to concentrate on refining your concept and reaching your goals faster.',
     },
     {
       id: nanoid(6),
-      title: 'Forget About Code',
-      name: 'StartUp 4',
-      description: 'Startup Framework gives you complete freedom over your creative process — you don’t have to think about any technical aspects. There are no limits and absolutely no coding.',
+      name: 'Startup 4',
+      title: 'Elevate Your Creativity',
+      description: 'Elevate your creative process to new heights. With our framework, innovation knows no bounds. Say goodbye to coding hassles and hello to limitless possibilities for your next big project.',
     },
   ]
 

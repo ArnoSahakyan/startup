@@ -1,3 +1,5 @@
+@use '../../assets/webColors.scss' as *;
+
 .Header {
   background-image: url('/Landing\ Page@2x.png');
   background-size: cover;
@@ -10,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 100px;
-    color: white;
+    color: $white;
     font-family: "DM Sans", sans-serif;
     padding: 80px 0;
 
@@ -23,6 +25,11 @@
 
         li {
           cursor: pointer;
+          transition: 150ms;
+
+          &:hover {
+            opacity: 0.7;
+          }
 
           &.active {
             opacity: 0.3;
@@ -41,7 +48,7 @@
         li {
           button {
             &::before {
-              color: white;
+              color: $white;
               font-size: 10px;
             }
           }
@@ -49,16 +56,27 @@
       }
 
       .slick-arrow {
+        opacity: 0.6;
+        transition: 150ms;
+
+        &:hover {
+          opacity: 0.9;
+        }
+
         &.slick-prev {
+          top: 90px;
+
           &::before {
-            font-size: 70px;
+            font-size: 50px;
             content: "\2039";
           }
         }
 
         &.slick-next {
+          top: 90px;
+
           &::before {
-            font-size: 70px;
+            font-size: 50px;
             content: "\203A";
           }
         }
@@ -95,21 +113,21 @@
     .headerButton {
       cursor: pointer;
       padding: 17px 35px;
-      background-color: #482BE7;
+      background-color: $purple-btn;
       line-height: 26px;
       align-self: center;
-      color: white;
+      color: $white;
       border-radius: 100px;
       border: none;
       font-size: 18px;
       transition: 100ms;
 
       &:hover {
-        background-color: #3d22d8;
+        background-color: $purple-btn-hover;
       }
 
       &:active {
-        outline: 2px solid white;
+        outline: 2px solid $white;
       }
     }
   }
