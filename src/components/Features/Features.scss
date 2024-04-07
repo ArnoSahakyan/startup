@@ -1,0 +1,130 @@
+@use '../../assets/webColors.scss' as *;
+
+.FeaturesBG {
+  background-image: url('/features-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+
+  .Features {
+    font-family: "DM Sans", sans-serif;
+    padding: 200px 0;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__img {
+
+      width: 1000px;
+      position: absolute;
+      left: -35%;
+
+      img {
+        width: 1000px;
+      }
+    }
+
+
+    .slick-slider {
+      .slick-dots {
+        top: 0;
+        right: -150px;
+        transform: rotate(90deg);
+
+        li {
+          button {
+            &::before {
+              color: $white;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      .slick-list {
+        height: 150%;
+      }
+
+      width: 60%;
+      margin-left: auto;
+
+      .Slide {
+        width: 80% !important;
+        display: grid !important;
+        row-gap: 60px;
+        column-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+
+        &__top {
+          grid-column: 2 span;
+
+          h3 {
+            font-size: 42px;
+          }
+
+          p {
+            font-size: 22px;
+          }
+        }
+
+        &__left {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          &::before {
+            font-family: 'Bootstrap-icons';
+            content: '\F759';
+            font-size: 35px;
+            padding-left: 5px;
+          }
+
+
+          h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        &__right {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          &::before {
+            font-family: 'Bootstrap-icons';
+            content: '\F3E6';
+            padding-left: 5px;
+            font-size: 35px;
+          }
+
+          h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+
+
+      }
+
+
+
+    }
+
+
+  }
+}
