@@ -2,7 +2,7 @@
 
 .Info {
   height: 540px;
-  background-image: url('/info-bg.png');
+  background-image: url('/form-bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +15,6 @@
     align-items: center;
     gap: 28px;
     color: $white;
-    font-family: "DM Sans", sans-serif;
     width: 60%;
     text-align: center;
 

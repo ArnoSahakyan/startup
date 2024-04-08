@@ -8,7 +8,6 @@
 
     .InputArea {
         max-width: 970px;
-        font-family: "DM Sans", sans-serif;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -45,7 +44,6 @@
                 font-size: 14px;
                 font-weight: 600;
                 border-bottom: 3px solid $light-grey;
-                font-family: "DM Sans", sans-serif;
                 color: $text-light;
                 cursor: pointer;
 
