@@ -44,9 +44,10 @@
                 letter-spacing: 2px;
                 font-size: 14px;
                 font-weight: 600;
-                border-bottom: 3px solid $text-light;
+                border-bottom: 3px solid $light-grey;
                 font-family: "DM Sans", sans-serif;
                 color: $text-light;
+                cursor: pointer;
 
                 &.active {
                     color: $bg-dark;
@@ -73,69 +74,59 @@
 
                 span {
                     position: relative;
-                    color: #EBEAED;
+                    color: $light-grey;
 
-                    &::before {
-                        content: '';
-                        height: 2px;
-                        width: 142px;
-                        position: absolute;
-                        background-color: #EBEAED;
-                        // left: -155px;
-                        top: 50%;
-                        right: 33px;
-                    }
+                    &::before,
                     &::after {
                         content: '';
                         height: 2px;
                         width: 142px;
                         position: absolute;
-                        background-color: #EBEAED;
-                        left: 33px;
+                        background-color: $light-grey;
                         top: 50%;
-                    }
-                }
-                    input {
-                        border-radius: 100px;
-                        padding: 12px 24px;
-                        font-size: 18px;
-                        border: 2px solid #b0afb3;
+                        right: 33px;
                     }
 
-                    .btn-1 {
-                        padding: 12px 0;
-                        background-color: $green-btn;
-                        border-radius: 100px;
-                        border: none;
-                        font-size: 18px;
-                        color: $white;
-                        line-height: 26px;
-                        transition: 200ms;
-                        width: 330px;
-
-                        &:hover {
-                            background-color: $green-btn-hover;
-                        }
-                    }
-
-                    .btn-2 {
-                        padding: 12px 0;
-                        background-color: $blue-btn;
-                        border-radius: 100px;
-                        border: none;
-                        font-size: 18px;
-                        color: $white;
-                        line-height: 26px;
-                        transition: 200ms;
-                        width: 330px;
-
-                        &:hover {
-                            background-color: $blue-btn-hover;
-                        }
-
+                    &::after {
+                        left: 33px;
                     }
                 }
 
+                input {
+                    width: 330px;
+                    border-radius: 100px;
+                    padding: 12px 24px;
+                    font-size: 18px;
+                    border: 2px solid $light-grey;
+                }
+
+                .btn-1,
+                .btn-2 {
+                    padding: 12px 0;
+                    background-color: $green-btn;
+                    border-radius: 100px;
+                    border: none;
+                    font-size: 18px;
+                    color: $white;
+                    line-height: 26px;
+                    transition: 200ms;
+                    width: 330px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $green-btn-hover;
+                    }
+                }
+
+                .btn-2 {
+                    background-color: $blue-btn;
+
+                    &:hover {
+                        background-color: $blue-btn-hover;
+                    }
+                }
             }
+
         }
     }
+}
