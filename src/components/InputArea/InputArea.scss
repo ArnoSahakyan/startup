@@ -1,0 +1,132 @@
+@use '../../assets/webColors.scss' as *;
+
+.InputAreaBG {
+    background-image: url('/form-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .InputArea {
+        max-width: 970px;
+        font-family: "DM Sans", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 0;
+
+        &__content {
+            flex-basis: 38%;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            h2 {
+                font-size: 42px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &__login {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                width: 50%;
+                text-align: center;
+                padding: 25px 0;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 14px;
+                font-weight: 600;
+                border-bottom: 3px solid $light-grey;
+                font-family: "DM Sans", sans-serif;
+                color: $text-light;
+                cursor: pointer;
+
+                &.active {
+                    color: $bg-dark;
+                    border-bottom: 3px solid $bg-dark;
+                }
+            }
+        }
+
+        &__form {
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            align-items: center;
+
+            form {
+                padding: 70px;
+                display: flex;
+                gap: 30px;
+                flex-direction: column;
+                align-items: center;
+                min-height: 479px;
+                justify-content: center;
+
+                span {
+                    position: relative;
+                    color: $light-grey;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        height: 2px;
+                        width: 142px;
+                        position: absolute;
+                        background-color: $light-grey;
+                        top: 50%;
+                        right: 33px;
+                    }
+
+                    &::after {
+                        left: 33px;
+                    }
+                }
+
+                input {
+                    width: 330px;
+                    border-radius: 100px;
+                    padding: 12px 24px;
+                    font-size: 18px;
+                    border: 2px solid $light-grey;
+                }
+
+                .btn-1,
+                .btn-2 {
+                    padding: 12px 0;
+                    background-color: $green-btn;
+                    border-radius: 100px;
+                    border: none;
+                    font-size: 18px;
+                    color: $white;
+                    line-height: 26px;
+                    transition: 200ms;
+                    width: 330px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $green-btn-hover;
+                    }
+                }
+
+                .btn-2 {
+                    background-color: $blue-btn;
+
+                    &:hover {
+                        background-color: $blue-btn-hover;
+                    }
+                }
+            }
+
+        }
+    }
+}
