@@ -43,13 +43,38 @@
                 letter-spacing: 2px;
                 font-size: 14px;
                 font-weight: 600;
-                border-bottom: 3px solid $light-grey;
+                // border-bottom: 3px solid $light-grey;
                 color: $text-light;
                 cursor: pointer;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    height: 3px;
+                    width: 100%;
+                    background-color: $light-grey;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
 
                 &.active {
                     color: $bg-dark;
-                    border-bottom: 3px solid $bg-dark;
+
+                    &::before {
+                        background-color: $bg-dark;
+                        border-radius: 0 5px 5px 0;
+                        
+                        box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.4);
+                        -moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.4);
+                        box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.4);
+                    }
+
+                    &.login {
+                        &::before {
+                            border-radius: 5px 0 0 5px;
+                        }
+                    }
                 }
             }
         }

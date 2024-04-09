@@ -14,8 +14,8 @@ export default function InputArea() {
         <div className="InputArea__form">
 
           <div className="InputArea__login">
-            <p className={selected === 'Sign Up' ? 'active' : ''} onClick={() => setSelected('Sign Up')}>Sign Up</p>
-            <p className={selected === 'Login' ? 'active' : ''} onClick={() => setSelected('Login')}>Log In</p>
+            <p className={`${selected === 'Sign Up' ? 'active' : ''} signup`} onClick={() => setSelected('Sign Up')}>Sign Up</p>
+            <p className={`${selected === 'Login' ? 'active' : ''} login`} onClick={() => setSelected('Login')}>Log In</p>
           </div>
 
           {
